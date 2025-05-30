@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/claro.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodo Claro</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html {
+          font-family: "Ancizar Sans", sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body class="h-screen w-screen overflow-hidden">
+    <div class="relative h-full w-full">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="./src/assets/plazaclaro.png"
+          alt="Fondo Claro"
+          class="h-full w-full object-cover brightness-50"
+        />
+      </div>
+
+      <div
+        id="root"
+        class="relative z-10 h-full w-full flex items-center justify-center"
+      ></div>
+
+      <script type="module" src="/src/main.jsx"></script>
+    </div>
+  </body>
+</html>
